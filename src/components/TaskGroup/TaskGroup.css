@@ -1,0 +1,75 @@
+.TaskGroup {
+    border: 3px solid rgb(53, 160, 76);
+    padding: 20px 10px;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.TaskGroup h1 {
+    margin: 30px 0 50px;
+    text-align: center;
+    color: rgb(53, 160, 76);
+}
+
+.TaskGroup ul {
+    min-height: 50px;
+    list-style-type: "👉";
+    padding: 10px 10px 10px 35px;
+}
+
+.TaskGroup ul .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.TaskGroup ul .item li {
+    text-overflow: break-word;
+    cursor: pointer;
+    width: 100%;
+}
+
+.TaskGroup ul .item span {
+    cursor: pointer;
+    user-select: none;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.TaskGroup .form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.TaskGroup input {
+    flex: 4 1 0%;
+    min-width: 135px;
+    padding: 10px 15px 10px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid rgb(53, 160, 76);
+    caret-color: rgb(53, 160, 76);
+    font-weight: 600;
+}
+
+.TaskGroup input:focus,
+.TaskGroup button:focus {
+    outline: none;
+}
+
+.TaskGroup button {
+    flex: 1;
+    font-size: 18px;
+    background-color: rgb(53, 160, 76);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    border-radius: 3px; 
+    cursor: pointer;
+}
